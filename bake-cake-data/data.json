@@ -1,0 +1,200 @@
+{
+  "cake": [
+    {
+      "id": "1",
+      "name": "Chocolate Blueberries Cake",
+      "price": 499,
+      "rating": 3.8,
+      "Delivery": "40 Minutes",
+      "quantity": "1 kg",
+      "category": "cake"
+    },
+    {
+      "id": "2",
+      "name": "Chocolate Cookies",
+      "price": 499,
+      "rating": 4.2,
+      "Delivery": "60 Minutes",
+      "quantity": "10 Cookies",
+      "category": "cookie"
+    },
+    {
+      "id": "3",
+      "name": "Monster Theme Cake",
+      "price": 399,
+      "rating": 4.9,
+      "Delivery": "30 Minutes",
+      "category": "cake",
+      "quantity": "3 kg"
+    },
+    {
+      "id": "4",
+      "name": "Chocolate Summer Berries",
+      "price": 299,
+      "rating": 3.9,
+      "Delivery": "20 Minutes",
+      "category": "cake",
+      "quantity": "2 kg"
+    },
+    {
+      "id": "5",
+      "name": "Berries Summer Cupcakes",
+      "price": 600,
+      "rating": 5,
+      "Delivery": "60 Minutes",
+      "category": "cupCake",
+      "quantity": "6 Cup-cakes"
+    },
+    {
+      "id": "6",
+      "name": "Chocolate Bonbons",
+      "price": 599,
+      "rating": 4.1,
+      "Delivery": "60 Minutes",
+      "category": "cookie",
+      "quantity": "10 Bonbons"
+    },
+    {
+      "id": "7",
+      "name": "Brownies Different Flavor",
+      "price": 200,
+      "rating": 3.9,
+      "Delivery": "45 Minutes",
+      "category": "brownie",
+      "quantity": "10 Brownies"
+    },
+    {
+      "id": "8",
+      "name": "Muffin Devil Horns",
+      "price": 299,
+      "rating": 3.6,
+      "Delivery": "60 Minutes",
+      "category": "cupCake",
+      "quantity": "3 Muffins"
+    },
+    {
+      "id": "9",
+      "name": "Cherry Jelly Cheesecake",
+      "price": 799,
+      "quantity": "2 kg",
+      "rating": 4.3,
+      "category": "cake",
+      "Delivery": "60 Minutes"
+    },
+    {
+      "id": "10",
+      "name": "Classic Cheesecake",
+      "price": 399,
+      "rating": 5,
+      "Delivery": "60 Minutes",
+      "category": "cake",
+      "quantity": "Half kg"
+    },
+    {
+      "id": "11",
+      "name": "Cookies Cream Cake",
+      "price": 599,
+      "rating": 4.5,
+      "Delivery": "60 Minutes",
+      "category": "cake",
+      "quantity": "Half kg"
+    },
+    {
+      "id": "12",
+      "name": "Easter Cupcakes",
+      "price": 199,
+      "rating": 3.4,
+      "Delivery": "60 Minutes",
+      "category": "cupCake",
+      "quantity": "3 Cup-cakes"
+    },
+    {
+      "id": "13",
+      "name": "Fruit Cake",
+      "price": 599,
+      "rating": 4,
+      "Delivery": "60 Minutes",
+      "category": "cake",
+      "quantity": "Half kg"
+    },
+    {
+      "id": "14",
+      "name": "Isometric chocolate brownies",
+      "price": 199,
+      "rating": 3,
+      "Delivery": "60 Minutes",
+      "category": "brownie",
+      "quantity": "2 Brownies"
+    },
+    {
+      "id": "15",
+      "name": "Butter Cookies",
+      "price": 199,
+      "rating": 4.6,
+      "Delivery": "60 Minutes",
+      "category": "cookie",
+      "quantity": "10 Cookies"
+    },
+    {
+      "id": "16",
+      "name": "Chocolate Cupcake",
+      "price": 199,
+      "rating": 4.8,
+      "Delivery": "60 Minutes",
+      "quantity": "2 Cup-cakes",
+      "category": "cupCake"
+    },
+    {
+      "id": "17",
+      "name": "Muffin Ghost",
+      "price": 249,
+      "rating": 4.7,
+      "Delivery": "60 Minutes",
+      "category": "cupCake",
+      "quantity": "4 Muffins"
+    },
+    {
+      "id": "18",
+      "name": "Pumpkin Spice Cupcakes",
+      "price": 199,
+      "rating": 4.6,
+      "Delivery": "60 Minutes",
+      "category": "cupCake",
+      "quantity": "2 Cup-cakes"
+    }
+  ],
+  "cakeRequest": [
+    {
+      "address": [
+        "32",
+        "Supertech Captown",
+        "1211145",
+        "Noida"
+      ],
+      "customerName": "Atul Singh",
+      "customerEmail": "atulshekhawat21@gmail.com",
+      "customerPhoneNo": "9050869869",
+      "category": "Cake",
+      "quantity": 2,
+      "orderDate": "2023-10-07T18:30:00.000Z",
+      "cakeName": "Chocolate Blueberries Cake",
+      "id": 1
+    },
+    {
+      "address": [
+        "32",
+        "Urbana Jewels",
+        "302029",
+        "Jaipur"
+      ],
+      "customerName": "Pooja",
+      "customerEmail": "poojarathore@gmail.com",
+      "customerPhoneNo": "9050782345",
+      "category": "Cake",
+      "quantity": 1,
+      "orderDate": "2023-10-08T18:30:00.000Z",
+      "cakeName": "Monster Theme Cake",
+      "id": 2
+    }
+  ]
+}
