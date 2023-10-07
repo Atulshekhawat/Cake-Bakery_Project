@@ -1,0 +1,11 @@
+<img src="../../assets/images/hero.png" alt="">
+<div id="searchFilter">
+    <app-search (searchTextChanged)="onSearchTextChanged($event)"></app-search>
+    <app-filter (filteredCategory)="onFilter($event)"></app-filter>
+</div>
+
+<div class="container">
+    <div class="card-body">
+        <app-cake-card class="cake-card" *ngFor="let cake of cakes" [cake]="cake"></app-cake-card>
+    </div>
+</div>

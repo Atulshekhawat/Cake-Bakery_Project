@@ -1,0 +1,12 @@
+#search{
+    margin-top: 20px;
+}
+input{
+    padding: 10px;
+    width: 300px;
+    border-radius: 12px 0  0 12px ;
+}
+
+button{
+    border-radius: 0 12px 12px 0;
+}

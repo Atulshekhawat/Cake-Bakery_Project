@@ -1,0 +1,16 @@
+div{
+    text-align: center;
+    width: 30%;
+    height: 20%;
+    margin: 15% auto;
+    padding: 100px;   
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+h1{
+    font-size: xx-large;
+}

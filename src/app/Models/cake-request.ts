@@ -1,0 +1,20 @@
+export type CakeReqest ={
+    id?:string,
+    cakeName?:string,
+    orderDate?:string,
+    deliveryDate?:string,
+    customerName?:string,
+    customerPhoneNo?:number,
+    customerEmail?:string,
+    address:[
+        houseNo?:number,
+        streetName?:string,
+        pincode?:number,
+        locality?:string,
+        alternatePhoneNo?:number,
+        additionalInfo?:string
+    ],
+    quantity?:number,
+    category?:string,
+    totalBill?:number
+}

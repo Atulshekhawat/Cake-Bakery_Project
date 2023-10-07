@@ -1,0 +1,29 @@
+#header{
+    display: flex;
+    background-color: coral;
+    height: 10%;
+}
+
+h1{
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+}
+
+.heading{
+    text-decoration: none;
+    color: black;
+}
+
+#icons{
+    margin-top: 2%;
+    margin-left: 70%;
+}
+
+#darkMode{
+    margin-top: 1.5%;
+}
+mat-icon{
+    
+    margin-left: 20px;
+    color: black;
+}

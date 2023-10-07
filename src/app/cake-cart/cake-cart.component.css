@@ -1,0 +1,68 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header > nav > mat-icon {
+    cursor: pointer;
+}
+
+#cake-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#cake-detail {
+    margin-top: 65px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding : 0 14px;   
+}
+#cake-detail h2,h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    color: chocolate;
+}
+
+#cake-detail img {
+    width: 90%;
+}
+
+#tour-request{
+    margin-top: 15px;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+
+#cake-request {
+    width: 35%;
+    display: flex;
+    padding-left: 10px;
+    flex-direction: column;
+}
+
+button{
+    width: 45%;
+    margin:1rem 0;
+}
+mat-form-field{
+    margin-left: 4px;
+}
+mat-card{
+    width:300px;
+    background-color: white;
+}
+img{
+    border-radius: 20px;
+    box-shadow: 1px 4px 25px coral,1px 2px 5px rgb(47, 217, 93);
+}
+
+#tour-request{
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 1px 4px 25px coral,1px 2px 5px rgb(47, 217, 93);
+    width: 520px;
+}
