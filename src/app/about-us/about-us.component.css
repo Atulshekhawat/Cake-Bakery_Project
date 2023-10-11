@@ -1,0 +1,36 @@
+.container p ,ul{
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Spectral", serif;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container h3{
+    font-size: 30px;
+    text-align: center;
+}
+
+.about-us img{
+    width: max-content;
+    margin-top: 45px;
+    border-radius: 15px;
+}
+
+.about-us h3{
+  
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+span{
+    color: #ff6800;
+}
+
+.about-us img{
+    height: auto;
+    width: 100%;
+}
+
+

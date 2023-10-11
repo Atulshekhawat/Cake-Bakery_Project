@@ -1,3 +1,11 @@
+#searchFilter {
+    display: flex;
+    align-items: flex-end;
+}
+
+.filter{
+    padding-left:30%;
+}
 .card-body {
     display: flex;
     justify-content: left;
@@ -5,14 +13,5 @@
     flex-wrap: wrap;
     margin-top: 40px;
     padding-bottom: 40px;
-    margin-left: 40px;
-}
-img{
-    height: 700px;
-    width: 100%;
-}
-#searchFilter {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
+    /* margin-left: 20px; */
 }

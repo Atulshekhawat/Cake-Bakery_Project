@@ -9,8 +9,6 @@ import { Observable } from 'rxjs';
 
 export class CanDeactivateGuard implements CanDeactivate<HomeComponent>{
   canDeactivate(component: HomeComponent, currentRoute: ActivatedRouteSnapshot, currentState: RouterStateSnapshot, nextState: RouterStateSnapshot): boolean | UrlTree | Observable<boolean | UrlTree> | Promise<boolean | UrlTree> {
-    alert("You can't leave the lage");
-    return false;
+    return component.canDeactivate ? component.canDeactivate() : true;
   }
-
 }

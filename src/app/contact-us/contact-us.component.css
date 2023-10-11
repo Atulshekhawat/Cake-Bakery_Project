@@ -1,0 +1,64 @@
+.contact-heading{
+    margin-top: 70px;
+    margin-left: 100px;
+}
+
+.contact-heading h3{
+    font-size: x-large;
+}
+.contact-now {
+    font-size: x-large;
+}
+
+.contact-heading h1{
+    font-size: 40px;
+}
+.contact-heading span{
+    color: red;
+    text-shadow: 2px 2px #5c5757;
+}
+
+.container{
+    display: flex;
+    width: 900px;
+    height: 500px;
+    margin: 40px auto;
+    background-color: rgb(144, 144, 143);
+    border-radius: 20px;
+}
+
+.container1{
+    padding-left: 100px;
+    padding-top: 50px;
+    text-align: center;  
+}
+.container1 h3 {
+    color: #090387;
+    font-size: large;
+}
+.container1 p {
+ color: rgb(186, 177, 177);  
+}
+
+.line{
+    height: 270px;
+    border: 1px solid rgb(157, 146, 146);
+    margin-top: 120px;
+    margin-left: 20px;
+}
+.container2{
+    padding-top: 50px;
+    margin-left: 40px;  
+}
+
+.container2 h3{
+    color: #090387;
+    font-size: large;
+}
+.container button{
+   background-color:#090387;;
+} 
+
+input, textarea{
+    background-color: rgb(133, 132, 131);
+}

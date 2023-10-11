@@ -24,5 +24,8 @@ export class LoginComponent {
       this.loggedIn.emit(true);
       this.cakeRouterService.navigateToTourRequestsView();
     }
+    else{
+      alert("Wrong password entered");
+    }
   }
 }

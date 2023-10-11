@@ -17,6 +17,6 @@ export class RouteService {
   }
 
   toLogin() {
-    this.routerService.navigate(["login"]);
+    this.routerService.navigate(["login"]); //programatic routing 
   }
 }

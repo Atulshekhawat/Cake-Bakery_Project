@@ -1,29 +1,35 @@
-#header{
+#navbar{
     display: flex;
     background-color: coral;
     height: 10%;
 }
 
-h1{
-    padding-top: 1.5rem;
-    padding-left: 1rem;
-}
 
-.heading{
+.headingLink{
     text-decoration: none;
     color: black;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+
 }
 
+.headingLink:hover{
+    color: rgb(239, 214, 214);
+
+}
 #icons{
     margin-top: 2%;
     margin-left: 70%;
 }
 
-#darkMode{
-    margin-top: 1.5%;
+button:hover{
+    border: 1px solid white;
 }
-mat-icon{
-    
-    margin-left: 20px;
-    color: black;
+
+a{
+    color: rgb(48, 48, 240);
+}
+
+a:hover{
+    color: red;
 }

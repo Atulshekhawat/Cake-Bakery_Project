@@ -1,0 +1,29 @@
+
+img{
+    width: 30px; 
+    margin: 11px;
+}
+
+.foot-panel1{
+    background-color: coral;
+    color: white;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul a{
+    display: block;
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #dddd;
+}
+
+.foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+
+}
+

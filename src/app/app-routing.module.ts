@@ -6,6 +6,9 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { LoginComponent } from './login/login.component';
 import { CakeRequestComponent } from './cake-request/cake-request.component';
 import { CanDeactivateGuard } from './can-deactivate.guard';
+import { AuthGuard } from './services/auth.guard';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 const routes: Routes = [
   {
@@ -15,10 +18,16 @@ const routes: Routes = [
     path:"login", component:LoginComponent
   },
   {
-    path:"cake-cart/:id",component:CakeCartComponent
+    path:"cake-cart/:id",component:CakeCartComponent,canDeactivate:[CanDeactivateGuard]
   },
   {
-    path:"cake-request", component:CakeRequestComponent
+    path:"cake-request", component:CakeRequestComponent,canActivate:[AuthGuard]
+  },
+  {
+    path:"about-us", component:AboutUsComponent
+  },
+  {
+    path:"contact-us", component:ContactUsComponent
   },
   {
     path:"**", component: NotfoundComponent

@@ -20,7 +20,6 @@ import { CakeCartComponent } from './cake-cart/cake-cart.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { SearchComponent } from './search/search.component';
 import { MatFormFieldModule} from '@angular/material/form-field';
-import { NavigationComponent } from './navigation/navigation.component';
 import { LoginComponent } from './login/login.component';
 import{MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
@@ -32,6 +31,14 @@ import {MatNativeDateModule} from '@angular/material/core';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { FilterComponent } from './filter/filter.component';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { FooterComponent } from './footer/footer.component';
+import { CakeService } from './services/cake.service';
+import { RouteService } from './services/route.service';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { HeroSectionComponent } from './hero-section/hero-section.component';
 
 
 @NgModule({
@@ -43,10 +50,13 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     CakeCartComponent,
     NotfoundComponent,
     SearchComponent,
-    NavigationComponent,
     LoginComponent,
     CakeRequestComponent,
     FilterComponent,
+    FooterComponent,
+    AboutUsComponent,
+    ContactUsComponent,
+    HeroSectionComponent,
   ],
   imports: [
     BrowserModule,
@@ -65,9 +75,13 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     MatInputModule,
     MatSelectModule,
     MatTableModule,
-    MatDatepickerModule,MatSnackBarModule,MatNativeDateModule,MatSlideToggleModule,MatButtonToggleModule
+    MatDatepickerModule,MatSnackBarModule,MatNativeDateModule,MatSlideToggleModule,MatButtonToggleModule,
+    MatPaginatorModule,MatSortModule
   ],
-  providers: [],
+  providers: [
+    CakeService,
+    RouteService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -9,10 +9,12 @@ import { CakeService } from '../services/cake.service';
 })
 export class HomeComponent {
   cakes: Cake[] = [];
-  filterByCategory: any;
-
+  categoryFilter: string = "";
+  canDeactivate: any;
+  // Injecting the service 
   constructor(private cakeService: CakeService) {}
 
+  // Calling the service
   ngOnInit(): void {
     this.cakeService.getCakes().subscribe({
       next: (data) => {
@@ -29,7 +31,7 @@ export class HomeComponent {
       next: (data) => {
         if (cakeName || cakeName !== '') {
           this.cakes = this.cakes.filter((cake) =>
-            cake.name?.toLowerCase().startsWith(cakeName.toLowerCase())
+            cake.name?.toLowerCase().includes(cakeName.toLowerCase())
           );
         } else {
           this.cakes = data;
@@ -39,10 +41,14 @@ export class HomeComponent {
   }
 
   onFilter(filter: string) {
-    if(!this.filterByCategory) {
-      this.filterByCategory = "all";
-    } else {
-      this.filterByCategory.emit(this.filterByCategory)
-    }
+    this.categoryFilter = filter;
+    this.cakeService.getCakes().subscribe({
+      next: data => {
+        this.cakes = data.filter(cake => cake.category === this.categoryFilter)
+        if(this.categoryFilter === "all") {
+          this.cakes = data;
+        }
+      }
+    })
   }
 }

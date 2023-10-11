@@ -1,0 +1,30 @@
+.hero-unit{
+    display: flex;
+    height:700px;
+    width: 96%;
+}
+
+.hero-content{
+    margin: auto 0;
+    margin-left: 120px;
+}
+
+.hero-content h1{
+    font-weight: bolder;
+    font-size: xx-large;
+    
+}
+
+.hero-content p { 
+    width: 90%;
+}
+
+.hero-image{
+    margin-top: 180px;
+    height: 300px;
+}
+
+.hero-image:hover{
+    box-shadow: 5px 6px 50px red;
+    transition:3s;
+}

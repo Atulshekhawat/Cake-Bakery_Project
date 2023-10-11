@@ -11,6 +11,7 @@ export class FilterComponent {
   @Output()
   filteredCategory: EventEmitter<string> = new EventEmitter<string>();
 
+
   Onfilter() {
     if(!this.filterByCategory) {
       this.filterByCategory = "all";

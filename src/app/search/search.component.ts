@@ -16,4 +16,9 @@ export class SearchComponent {
   searchCake() {
     this.searchTextChanged.emit(this.searchText);
   }
+  
+  deleteCake(){
+    this.searchText ="";
+    this.searchTextChanged.emit(this.searchText);
+  }
 }

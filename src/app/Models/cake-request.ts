@@ -11,7 +11,6 @@ export type CakeReqest ={
         streetName?:string,
         pincode?:number,
         locality?:string,
-        alternatePhoneNo?:number,
         additionalInfo?:string
     ],
     quantity?:number,

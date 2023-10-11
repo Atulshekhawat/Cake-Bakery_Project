@@ -13,7 +13,9 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrls: ['./cake-cart.component.css']
 })
 export class CakeCartComponent {
-
+  currentDate:any = new Date();
+  totalBill: any;
+  quantity:any;
 
   getErrorMessage() {
     throw new Error('Method not implemented.');
@@ -25,7 +27,9 @@ export class CakeCartComponent {
         address: []
       };
       submitStatus: boolean=false;
-    email: any;
+      email: any;
+      name: any;
+      price: any;
     
     minDate: Date = new Date();
       constructor(private activatedRoute: ActivatedRoute,
@@ -37,9 +41,10 @@ export class CakeCartComponent {
     
         canDeactivate() {
           if (!this.submitStatus)
-              this.submitStatus = confirm("You have not submitted a request to this tour. Any details entered will be lost. Are you sure you want to leave?");
+              this.submitStatus = confirm("Are you sure you want to leave this page?");
           return this.submitStatus;
         }
+
         ngOnInit(): void {
           this.activatedRoute.paramMap.subscribe(param => {
               let id = param.get("id") ?? "";
@@ -48,7 +53,7 @@ export class CakeCartComponent {
                   this.submitStatus = false;
               })
           })
-      }
+        }
     
       makeRequest() {
         if (this.cakeRequest.customerName) {
@@ -59,8 +64,7 @@ export class CakeCartComponent {
                 duration: 3000
               });
               this.submitStatus=true;
-    
-    
+
               this.routeService.toHome();
             },
             error: err => {
@@ -70,8 +74,15 @@ export class CakeCartComponent {
         }
       }
 
-      calculateTotalAmount(){
-        
-        
+      calculateTotalBill() {
+        if (this.cake && typeof this.cake.price === 'number' && this.cakeRequest.quantity) {
+          if( this.cakeRequest.quantity>0){
+            this.totalBill = this.cake.price * this.cakeRequest.quantity;
+          }
+        } else {
+          this.totalBill = 0;
+        }    
+            
       }
+
 }

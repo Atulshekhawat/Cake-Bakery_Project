@@ -1,13 +1,23 @@
-.cake-card {
+  .cake-card {
     width: 280px;
     border-radius: 10px;
     box-shadow: 1px 4px 10px coral;
     background-color: white;
   }
   
+  .cake-card:hover {
+    background-image: linear-gradient(to top, rgba(231, 100, 6, 0), coral);
+    box-shadow: 5px 6px 100px rgb(244, 128, 128);
+    transition:4s;
+  }
+
+  img :hover {
+    box-shadow: 1px 4px 10px black;
+  }
   #card-img {
     width: 100%;
     height: 250px;
+    margin: 0 auto;
   }
   
   mat-card-header mat-card-subtitle {
@@ -26,12 +36,15 @@
     font-weight: 500;
     color: #f7a600;
   }
+
   mat-card-content mat-card-subtitle {
     color: black;
   }
+
   mat-card-content mat-card-subtitle span{
     color: green;
   }
+
   mat-card-actions {
     display: flex;
     align-items: center;
